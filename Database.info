@@ -1,0 +1,53 @@
+
+Following is the database description.
+Syntax: 1. Table table_name
+        2. Next lines describes the column in the format (col_name, data type, null, key, default, extra)
+
+Table Catering ---->
+
+id	int	NO	PRI	""	""
+Caterer	varchar(25)	YES	""	""	""
+menu	text	YES	""	""	""
+budget	bigint	YES	""	0	""
+
+
+Table Venue ----->
+id	int	NO	PRI	""	""
+Name	varchar(25)	YES	""	""	""
+Image	varchar(200)	YES	""	""	""
+capacity	int	YES	""	""	""
+price	int	YES	""	""	""
+facilities	text	YES	""	""	""
+description	text	YES	""	""	""
+
+
+
+Table User ----->
+
+id	int	NO	PRI	""	""
+Name	char(50)	YES	""	""	""
+phone	bigint	YES	""	""	""
+email	varchar(50)	YES	""	""	""
+type	varchar(10)	YES	""	""	""
+password	varchar(50)	YES	""	""	""
+
+
+Table event ----->
+
+type	varchar(50)	YES	""	""	""
+venue	varchar(50)	YES	""	""	""
+caterer	varchar(50)	YES	""	""	""
+photographer	varchar(50)	YES	""	""	""
+date	varchar(20)	YES	""	""	""
+
+
+
+Table photographers ---->
+
+id	int	NO	PRI	""	""
+name	varchar(25)	YES	""	""	""
+contact_id	bigint	YES	""	""	""
+price	bigint	YES	""	""	""
+duration	int	YES	""	""	""
+
+
